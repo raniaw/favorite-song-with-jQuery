@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0e14;
+}
+
+.container {
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  margin-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  z-index: 99;
+}
+
+header h3 {
+  font-family: "Great Vibes";
+  font-size: 50px;
+  color: #851e1e;
+  text-shadow: 4px 3px 4px white;
+  text-align: center;
+}
+
+header p.chris {
+  font-family: "Poiret One", cursive;
+  color: #c4c4c4;
+  text-align: right;
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+section {
+  border-radius: 50px;
+  margin: 10px;
+}
+
+section p.txt {
+  font-family: "Didact Gothic", sans-serif;
+  color: white;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (min-width: 847px) and (orientation: landscape) {
+  img#chris {
+    position: fixed;
+    right: -1em;
+    bottom: -1em;
+    opacity: 0.6;
+    width: 30vw;
+    height: auto;
+    z-index: 1;
+  }
+  img#lady {
+    position: fixed;
+    top: -1em;
+    left: -3em;
+    width: 45vw;
+    height: auto;
+    z-index: 1;
+  }
+  img#fluegel {
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    width: 40vw;
+    height: auto;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  img#lady {
+    position: fixed;
+    top: -1em;
+    left: -3em;
+    width: 45vw;
+    height: auto;
+    z-index: 1;
+  }
+  img#fluegel {
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    width: 40vw;
+    height: auto;
+    z-index: 2;
+  }
+  img#chris {
+    position: fixed;
+    right: -1em;
+    bottom: -1em;
+    opacity: 0.6;
+    width: 30vw;
+    height: auto;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1080px) and (orientation: portrait) {
+  img#chris {
+    position: fixed;
+    right: -1em;
+    bottom: -2em;
+    width: 40vw;
+    height: auto;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  img#lady {
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    width: 40vw;
+    height: auto;
+    z-index: 1;
+  }
+  img#fluegel {
+    position: fixed;
+    left: 20%;
+    top: 50%;
+    width: 50vw;
+    height: auto;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 440px) and (orientation: portrait) {
+  img#chris {
+    position: fixed;
+    right: -1em;
+    bottom: -2em;
+    width: 50vw;
+    height: auto;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  img#lady {
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    width: 50vw;
+    height: auto;
+    z-index: 1;
+  }
+  img#fluegel {
+    position: fixed;
+    left: 20%;
+    top: 50%;
+    width: 60vw;
+    height: auto;
+    z-index: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
