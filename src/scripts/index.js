@@ -5,24 +5,28 @@ import '../styles/main.scss';
 import '../styles/main.css';
 
 import 'bootstrap';
-import imgLady from '../images/ladyInRed-530-800.png';
+import _ from 'lodash'; 
+import imgLady from 'images/ladyInRed-530-800.png';
 import imgChris from '../images/chris.png';
 import imgFluegel from '../images/fluegel_260.png';
-
+//require("html-loader!./index.html");
 
 // mp3 einbinden
 var src = require('../media/Chris-De-Burgh-The-Lady-In-Red.mp3');
-var ladyImg = require('../images/ladyInRed-530-800.png');
-var chrisImg = require('../images/chris.png');
-var fluegelImg = require('../images/fluegel_260.png');
+//var ladyImg = require('../images/ladyInRed-530-800.png');
+var chrisImg = require('images/chris.png');
+var fluegelImg = require('images/fluegel_260.png');
+
+const ladyImg = new Image();
+ladyImg.src=imgLady;
 //document.getElementById('audio').src = src;
-console.log(ladyImg.default)
+console.log("ladyimg: "+ladyImg.src)
 jQuery(document).ready(function (f) {
 
     $("#audio").src = src;
 
     //image find and set attrribute
-    $(this).find('#lady').attr("src", ladyImg.default);
+    $(this).find('#lady').attr("src", ladyImg.src);
     //  $(this).find('#lady').attr("src", imgLady);
     $(this).find('#chris').attr("src", chrisImg.default);
     //$(this).find('#chris').attr("src", imgChris);

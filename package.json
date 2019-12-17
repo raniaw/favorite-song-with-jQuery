@@ -1,10 +1,13 @@
 {
+  "homepage": "https://raniaw.github.io/favorite-song",
   "name": "favorite-song",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
     "build": "webpack --mode development",
+    "deploy": "gh-pages -d build",
     "start:dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
