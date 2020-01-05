@@ -35422,8 +35422,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var images_ladyInRed_530_800_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! images/ladyInRed-530-800.png */ "./src/images/ladyInRed-530-800.png");
-/* harmony import */ var _images_chris_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/chris.png */ "./src/images/chris.png");
-/* harmony import */ var _images_fluegel_260_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/fluegel_260.png */ "./src/images/fluegel_260.png");
+/* harmony import */ var images_chris_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! images/chris.png */ "./src/images/chris.png");
+/* harmony import */ var images_fluegel_260_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! images/fluegel_260.png */ "./src/images/fluegel_260.png");
 // The following line makes sure your styles are included in the project. Don't remove this.
 
 
@@ -35455,7 +35455,8 @@ jQuery(document).ready(function (f) {
 
   $(this).find('#fluegel').attr("src", fluegelImg["default"]); // $(this).find('#fluegel').attr("src", imgFluegel);
 
-  console.log(ladySrc["default"]);
+  console.log(ladyImg.src);
+  console.log(fluegelImg["default"]);
 });
 
 /***/ }),
