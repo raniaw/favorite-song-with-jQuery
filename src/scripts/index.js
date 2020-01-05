@@ -7,8 +7,8 @@ import '../styles/main.css';
 import 'bootstrap';
 import _ from 'lodash'; 
 import imgLady from 'images/ladyInRed-530-800.png';
-import imgChris from '../images/chris.png';
-import imgFluegel from '../images/fluegel_260.png';
+import imgChris from 'images/chris.png';
+import imgFluegel from 'images/fluegel_260.png';
 //require("html-loader!./index.html");
 
 // mp3 einbinden
@@ -32,5 +32,6 @@ jQuery(document).ready(function (f) {
     //$(this).find('#chris').attr("src", imgChris);
     $(this).find('#fluegel').attr("src", fluegelImg.default);
     // $(this).find('#fluegel').attr("src", imgFluegel);
-    console.log(ladySrc.default)
+    console.log(ladyImg.src)
+    console.log(fluegelImg.default)
 });
